@@ -16,6 +16,14 @@ implementation project(path: ':xFirebase')
 
 4 - Connect to Firebase in android Studio
 
-[ if any error with google-services.json
-  Download Manually and place inside '/project/app' folder.
-]
+```
+implementation 'com.google.firebase:firebase-analytics:18.0.0'
+implementation 'com.google.firebase:firebase-auth:20.0.1'
+implementation 'com.google.firebase:firebase-firestore:22.0.0'
+implementation 'com.google.firebase:firebase-storage:19.2.0'
+implementation 'com.google.firebase:firebase-messaging:21.0.0'
+implementation 'com.google.firebase:firebase-config:20.0.1'
+implementation 'com.google.firebase:firebase-dynamic-links:19.1.1'
+implementation 'com.google.firebase:firebase-appindexing:19.1.0'
+implementation 'com.google.firebase:firebase-inappmessaging-display:19.1.2'
+```
