@@ -30,6 +30,9 @@ implementation 'com.google.firebase:firebase-inappmessaging-display:19.1.2'
 4 - Connect to Firebase in android Studio (shortcut below)
 ```
 Tools -> Firebase -> Analytics -> Log an Analytic Event -> Connect to Firebase
+
+// For Cloud Messaging
+click on Add FCM to your App
 ```
 
 5 - Download "xFirebase1.zip" , extract and copy.
