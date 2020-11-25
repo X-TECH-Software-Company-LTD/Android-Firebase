@@ -29,7 +29,7 @@ Tools -> Firebase -> Analytics -> Log an Analytic Event -> Connect to Firebase
 
 5 - Right Click on your MainActivity in Android Studio and select "Show in Explorer" , paste them.
 
-6 - [for Cloud Messaging]
+6 - [for Cloud Messaging] , add in Manifest inside Application tag
 ```
 <service
 android:name=".xFirebaseMessagingService"
@@ -38,6 +38,10 @@ android:exported="false">
     <action android:name="com.google.firebase.MESSAGING_EVENT" />
   </intent-filter>
 </service>
+
+<meta-data
+android:name="com.google.firebase.messaging.default_notification_channel_id"
+android:value="1001" />
 ```
 
 # Usages
