@@ -6,15 +6,7 @@ connect Firebase services
 1 -  ``` multiDexEnabled true ```
 on app gradle defaultConfig
 
-2 - Download "xFirebase.zip" and Import as module
-https://cdn.xtsmm.com/android/libraries/Android%20Ads.zip
-
-3 - add in app gradle 
-```
-implementation project(path: ':xFirebase')
-```
-
-4 - Connect to Firebase in android Studio
+2 - add dependencies to app gradle 
 
 ```
 implementation 'com.google.firebase:firebase-analytics:18.0.0'
@@ -26,4 +18,9 @@ implementation 'com.google.firebase:firebase-config:20.0.1'
 implementation 'com.google.firebase:firebase-dynamic-links:19.1.1'
 implementation 'com.google.firebase:firebase-appindexing:19.1.0'
 implementation 'com.google.firebase:firebase-inappmessaging-display:19.1.2'
+```
+
+3 - Connect to Firebase in android Studio (shortcut below)
+```
+Tools -> Firebase -> Analytics -> Log an Analytic Event -> Connect to Firebase
 ```
