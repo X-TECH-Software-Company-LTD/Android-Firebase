@@ -12,7 +12,14 @@ connect Firebase App services
 1 -  ``` multiDexEnabled true ```
 on app gradle defaultConfig
 
-2 - add dependencies to app gradle 
+2 - add Permissions to Manifest
+```
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+```
+
+3 - add dependencies to app gradle 
 
 ```
 implementation 'com.google.firebase:firebase-analytics:18.0.0'
@@ -20,16 +27,16 @@ implementation 'com.google.firebase:firebase-messaging:21.0.0'
 implementation 'com.google.firebase:firebase-inappmessaging-display:19.1.2'
 ```
 
-3 - Connect to Firebase in android Studio (shortcut below)
+4 - Connect to Firebase in android Studio (shortcut below)
 ```
 Tools -> Firebase -> Analytics -> Log an Analytic Event -> Connect to Firebase
 ```
 
-4 - Download "xFirebase1.zip" , extract and copy.
+5 - Download "xFirebase1.zip" , extract and copy.
 
-5 - Right Click on your MainActivity in Android Studio and select "Show in Explorer" , paste them.
+6 - Right Click on your MainActivity in Android Studio and select "Show in Explorer" , paste them.
 
-6 - [for Cloud Messaging] , add in Manifest inside Application tag
+7 - [for Cloud Messaging] , add in Manifest inside Application tag
 ```
 <service
 android:name=".xFirebaseMessagingService"
