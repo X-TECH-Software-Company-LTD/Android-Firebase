@@ -29,6 +29,17 @@ Tools -> Firebase -> Analytics -> Log an Analytic Event -> Connect to Firebase
 
 5 - Right Click on your MainActivity in Android Studio and select "Show in Explorer" , paste them.
 
+6 - [for Cloud Messaging]
+```
+<service
+android:name=".xFirebaseMessagingService"
+android:exported="false">
+  <intent-filter>
+    <action android:name="com.google.firebase.MESSAGING_EVENT" />
+  </intent-filter>
+</service>
+```
+
 # Usages
 
 ## Firebase Analytics
