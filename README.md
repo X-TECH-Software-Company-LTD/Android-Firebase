@@ -28,3 +28,28 @@ Tools -> Firebase -> Analytics -> Log an Analytic Event -> Connect to Firebase
 4 - Download "xFirebase1.zip" , extract and copy.
 
 5 - Right Click on your MainActivity in Android Studio and select "Show in Explorer" , paste them.
+
+# Usages
+
+## Firebase Analytics
+
+Start Analytics (standard)
+```
+xFirebase xfirebase=new xFirebase(this);
+xfirebase.startAnalytics();
+```
+
+Log an Event (advanced)
+```
+JSONArray JsonArray = new JSONArray();
+JSONObject JsonObject = new JSONObject();
+try {
+  JsonObject.put("name", "value");
+  JsonObject.put("click", "shopping");
+} catch (JSONException e) {
+  e.printStackTrace();
+}
+JsonArray.put(JsonObject);
+xFirebase xfirebase=new xFirebase(this);
+xfirebase.logAnalytics(JsonArray);
+```
