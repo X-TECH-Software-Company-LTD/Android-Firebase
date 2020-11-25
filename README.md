@@ -1,4 +1,4 @@
-# Android-Firebase
+# Android-Firebase Standard App
 connect Firebase App services
 
 ## Requirements
