@@ -1,6 +1,12 @@
 # Android-Firebase Standard App
 connect Firebase App services
 
+## Available Methods
+
+1. Analytics
+2. Cloud Messaging
+3. In App Messaging
+
 ## Requirements
 
 1 -  ``` multiDexEnabled true ```
@@ -18,3 +24,7 @@ implementation 'com.google.firebase:firebase-inappmessaging-display:19.1.2'
 ```
 Tools -> Firebase -> Analytics -> Log an Analytic Event -> Connect to Firebase
 ```
+
+4 - Download "xFirebase1.zip" , extract and copy.
+
+5 - Right Click on your MainActivity in Android Studio and select "Show in Explorer" , paste them.
