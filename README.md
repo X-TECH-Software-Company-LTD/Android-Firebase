@@ -35,7 +35,8 @@ Tools -> Firebase -> Analytics -> Log an Analytic Event -> Connect to Firebase
 click on Add FCM to your App
 ```
 
-5 - Download "xFirebase1.zip" , extract and copy.
+5 - Download "xFirebase.zip" , extract and copy.
+https://cdn.xtsmm.com/android/libraries/xFirebase.zip
 
 6 - Right Click on your MainActivity in Android Studio and select "Show in Explorer" , paste them.
 
