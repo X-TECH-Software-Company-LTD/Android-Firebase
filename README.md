@@ -107,7 +107,7 @@ Value ``` { a:1,b:2,c:3} ```
 
 JSON data format, object data , support only 1 key and 1 value sepatered by coma.
 
-
+### Listen action data on Button Click
 ```
 
 new xFirebase(this).notificationActions(new actionOnNotification() {
@@ -117,4 +117,7 @@ public void onData(JSONObject object) {
 }
 });
 ```
-Imple
+
+### Listen data from Notification
+
+
