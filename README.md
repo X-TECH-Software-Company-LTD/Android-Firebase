@@ -95,7 +95,21 @@ this advanced method is to send notification with " custom data ". Additional op
 This method will create buttons on notification with specific instructions. for example : to open MainActivity or A URL to browser.
 
 ![Firebase Setting](https://cdn.xtsmm.com/android/images/Capture.PNG)
+
+Key ``` #button.Open|MainActivity.class ```
+
+#button = require
+.Name = Text on Button
+|MainActivity.class = Class Name to Go
+|https://www....com/url = URL to Go
+
+Value ``` { a:1,b:2,c:3} ```
+
+JSON data format, object data , support only 1 key and 1 value sepatered by coma.
+
+
 ```
+
 new xFirebase(this).notificationActions(new actionOnNotification() {
 @Override
 public void onData(JSONObject object) {
