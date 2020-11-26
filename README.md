@@ -88,15 +88,19 @@ Notifications will be shown Automatically.
 Fixed foreground / background Notification problem.
 ```
 
-### Cloud Messaging with Parameters (advanced)
+### Cloud Messaging with Parameters (advanced) or
+### Android Notifications with Button (on foreGround)
+
 this advanced method is to send notification with " custom data ". Additional options from firebase.
 This method will create buttons on notification with specific instructions. for example : to open MainActivity or A URL to browser.
+
+![Firebase Setting](https://cdn.xtsmm.com/android/images/Capture.PNG)
 ```
-new xFirebase(this).notificationActions(new OnNotiAction() {
+new xFirebase(this).notificationActions(new actionOnNotification() {
 @Override
 public void onData(JSONObject object) {
   Log.d("xTechLog",object+"");
- }
+}
 });
 ```
 Imple
