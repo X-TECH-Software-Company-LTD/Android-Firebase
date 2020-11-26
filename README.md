@@ -1,5 +1,5 @@
 # Android-Firebase Standard App
-connect Firebase App services
+connect Firebase Analytics and Messaging
 
 ## Available Methods
 
@@ -48,15 +48,11 @@ android:exported="false">
     <action android:name="com.google.firebase.MESSAGING_EVENT" />
   </intent-filter>
 </service>
-
-<meta-data
-android:name="com.google.firebase.messaging.default_notification_channel_id"
-android:value="1001" />
 ```
 
-# Usages
+# Usages 
 
-## Firebase Analytics
+## 1 - Firebase Analytics
 
 Start Analytics (standard)
 ```
@@ -78,3 +74,29 @@ JsonArray.put(JsonObject);
 xFirebase xfirebase=new xFirebase(this);
 xfirebase.logAnalytics(JsonArray);
 ```
+
+## 2 - Firebase Cloud Messaging
+
+Tools -> Firebase -> Set Up Firebase Cloud Messaging -> Connect to Firebase
+
+Send Notifications at firebase https://console.firebase.google.com/
+
+### Cloud Messaging (standard)
+```
+Do not require any code to accept Messages.
+Notifications will be shown Automatically.
+Fixed foreground / background Notification problem.
+```
+
+### Cloud Messaging with Parameters (advanced)
+this advanced method is to send notification with " custom data ". Additional options from firebase.
+This method will create buttons on notification with specific instructions. for example : to open MainActivity or A URL to browser.
+```
+new xFirebase(this).notificationActions(new OnNotiAction() {
+@Override
+public void onData(JSONObject object) {
+  Log.d("xTechLog",object+"");
+ }
+});
+```
+Imple
