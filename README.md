@@ -1,5 +1,5 @@
-# Android-Firebase Standard App
-connect Firebase Analytics and Messaging
+# Android-Firebase Analytics and Messaging
+connect Firebase services
 
 ## Available Methods
 
@@ -98,10 +98,10 @@ This method will create buttons on notification with specific instructions. for 
 
 Key ``` #button.Open|MainActivity.class ```
 
-#button = require
-.Name = Text on Button
-|MainActivity.class = Class Name to Go
-|https://www....com/url = URL to Go
+1. #button = require
+2. .Name = Text on Button
+3. |MainActivity.class = Class Name to Go
+4. |https://www....com/url = URL to Go
 
 Value ``` { a:1,b:2,c:3} ```
 
