@@ -118,6 +118,4 @@ public void onData(JSONObject object) {
 });
 ```
 
-### Listen data from Notification
-
 
