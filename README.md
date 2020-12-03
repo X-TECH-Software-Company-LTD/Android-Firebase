@@ -43,12 +43,13 @@ https://cdn.xtsmm.com/android/libraries/xFirebase.zip
 7 - [for Cloud Messaging] , add in Manifest inside Application tag
 ```
 <service
-android:name=".xFirebaseMessagingService"
-android:exported="false">
-  <intent-filter>
-    <action android:name="com.google.firebase.MESSAGING_EVENT" />
-  </intent-filter>
-</service>
+            android:name=".xFirebaseMessagingService"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 ```
 
 # Usages 
